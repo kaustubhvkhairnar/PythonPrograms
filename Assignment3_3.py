@@ -16,7 +16,7 @@ def fun(no):
     min = arr[0];
 
     for i in range(no):
-        if (arr[i] < max):
+        if (arr[i] < min):
             min = arr[i];
 
     print("Given elements : ", arr);
