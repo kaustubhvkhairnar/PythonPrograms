@@ -18,34 +18,26 @@ class Circle:
         self.Circumference = 0.0;
 
     def Accept(self):
-        self.Radius = int(input("Enter Radius"))
-        return self.Radius;
+        self.Radius = int(input("Enter Radius :"))
 
-    @classmethod
-    def CalculateArea(cls,Radius):
-        Area = cls.PI * Radius * Radius;
-        return (Area);
+    def CalculateArea(self):
+        self.Area = Circle.PI * self.Radius * self.Radius;
 
+    def CalculateCircumference(self):
+        self.Circumference = 2 * Circle.PI * self.Radius;
 
-    @classmethod
-    def CalculateCircumference(cls, Radius):
-        print("Radius is ", Radius)
-        print("cls.PI",cls.PI)
-        Circumference = 2 * cls.PI * Radius;
-        return (Circumference)
-
-    def Display(self,Area,Circumference):
-        print(self.Radius);
-        print(Area);
-        print("Circumference is ",Circumference)
+    def Display(self):
+        print("Radius is :",self.Radius);
+        print("Area is :",self.Area);
+        print("Circumference is :",self.Circumference)
 
 
 def main():
     obj1 = Circle()
-    ret = obj1.Accept();
-    r1=obj1.CalculateArea(ret);
-    r2=obj1.CalculateCircumference(ret);
-    obj1.Display(r1,r2);
+    obj1.Accept();
+    obj1.CalculateArea();
+    obj1.CalculateCircumference();
+    obj1.Display();
 
 if __name__ == "__main__":
     main();
