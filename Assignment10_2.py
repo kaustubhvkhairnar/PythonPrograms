@@ -10,10 +10,13 @@ def extensionchange(path,ext):
     
     if exists:
         print();
+        max = 0;
         for Folder,Subfolder,File in os.walk(path):
             for fi in File:
-                if(fi.endswith(ext)):
-                    print("Filename is",fi);
+                print(fi);
+                newpath = Folder + "\" + name;
+                print(os.path.getsize(newpath));
+                print();
     else:
         print();
         print("ERROR : Invalid path or There's no such file in directory");
