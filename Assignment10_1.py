@@ -25,7 +25,7 @@ def main():
     try:
         DirectoryFileSearch(argv[1],argv[2]);
     except Exception as E:
-        print("ERROR ",E);
+        print("ERROR :",E);
 
 if __name__ == "__main__":
     main();
