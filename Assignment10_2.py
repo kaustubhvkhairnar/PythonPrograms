@@ -5,7 +5,7 @@
 import os;
 from sys import *;
 
-def ExtensionChange(path,ext,ext2):
+def DirectoryRename(path,ext,ext2):
     flag = os.path.isabs(path);
     if (flag == False):
         path = os.path.abspath(path);
@@ -22,20 +22,18 @@ def ExtensionChange(path,ext,ext2):
                     if newfile.endswith(ext):
                         pre, ext = os.path.splitext(newfile)
                         os.rename(newfile, pre + ext2)
-                        print("Filename :",newfile);
+                        print("Changed Filename :",pre,ext2);
                     elif fi.endswith(ext2):
-                        print("Changed Filename is",fi);
+                        print("Filename is",fi);
     else:
         print();
         print("ERROR : Invalid path or There's no such file in directory");
 
 def main():
     try:
-        ExtensionChange(argv[1],argv[2],argv[3]);
+        DirectoryRename(argv[1],argv[2],argv[3]);
     except Exception as E:
         print("ERROR ",E);
-    except ValueError:
-        print("Oh !")
-
+    
 if __name__ == "__main__":
     main();
