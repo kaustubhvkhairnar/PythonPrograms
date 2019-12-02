@@ -16,15 +16,17 @@ def DirectoryRename(path,ext,ext2):
         print();
 
         for Folder,Subfolders,Files in os.walk(path):
-                print("Folder name is",Folder);
-                for fi in Files:
-                    newfile = os.path.join(Folder ,fi) ;
-                    if newfile.endswith(ext):
-                        pre, ext = os.path.splitext(newfile)
-                        os.rename(newfile, pre + ext2)
-                        print("Changed Filename :",pre,ext2);
-                    elif fi.endswith(ext2):
-                        print("Filename is",fi);
+            c = list(os.path.split(Folder));
+            print ("Folder Name :", c[1]);
+            for fi in Files:
+                newfile = os.path.join(Folder ,fi) ;
+                if newfile.endswith(ext):
+                    pre, ext = os.path.splitext(newfile)
+                    os.rename(newfile, pre + ext2)
+                    c = list(os.path.split(pre));
+                    print ("Changed File Name :", c[1]+ext2);
+                elif fi.endswith(ext2):
+                    print("File Name :",fi);
     else:
         print();
         print("ERROR : Invalid path or There's no such directory");
@@ -34,6 +36,6 @@ def main():
         DirectoryRename(argv[1],argv[2],argv[3]);
     except Exception as E:
         print("ERROR ",E);
-    
+
 if __name__ == "__main__":
     main();
