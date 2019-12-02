@@ -27,7 +27,7 @@ def DirectoryRename(path,ext,ext2):
                         print("Filename is",fi);
     else:
         print();
-        print("ERROR : Invalid path or There's no such file in directory");
+        print("ERROR : Invalid path or There's no such directory");
 
 def main():
     try:
