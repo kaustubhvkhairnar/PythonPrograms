@@ -24,7 +24,7 @@ def ExtensionChange(path,ext,ext2):
                         os.rename(newfile, pre + ext2)
                         print("Filename :",newfile);
                     elif fi.endswith(ext2):
-                        print("Filename is",fi);
+                        print("Changed Filename is",fi);
     else:
         print();
         print("ERROR : Invalid path or There's no such file in directory");
