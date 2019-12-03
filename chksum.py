@@ -1,3 +1,5 @@
+#This Module traverse the directory calculates the checksum of it.
+
 import os;
 from sys import *;
 import hashlib;
@@ -62,24 +64,4 @@ def main():
         print("ERROR : ",E);
         
 if __name__ == "__main__":
-    main();
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
-        
+    main();       
