@@ -20,6 +20,7 @@ def main():
         read(argv[1], argv[2]);
     except Exception as E:
         print("Error", E);
+    print("Thank you for using our script");
 
 
 if __name__ == "__main__":
