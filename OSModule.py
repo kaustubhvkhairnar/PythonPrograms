@@ -3,7 +3,6 @@ import platform;
 from os import *;
 from datetime import datetime;
 
-
 def CPU_INFO_OS():
     print("--------CPU_INFO_OS--------");
     if platform.system == 'Windows':
