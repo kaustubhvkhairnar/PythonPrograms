@@ -1,3 +1,12 @@
+#OSModule.py contains below methods as :
+#CPU_Info_OS() : Displays information of CPU depending on OS
+#Platform_Info() : Display information of Platform (Operating System)
+#Boot_Info() : Display boot time of machine
+#CPU_Info() : Display all information of CPU
+#RAM_Usage() : Display information of RAM usage
+#Disk_Info() : Display information of Hard disk
+#You can directly call above functions from your application by importing OSModule as "import OSModule"
+
 import psutil;
 import platform;
 from os import *;
