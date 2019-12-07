@@ -1,4 +1,4 @@
-def ProcessDisplay(path = "dd"):
+def ProcessDisplay(path):
 
     if not os.path.exists(path):
         os.mkdir(path);
