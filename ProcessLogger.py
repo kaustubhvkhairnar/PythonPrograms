@@ -1,20 +1,28 @@
+import sys;
+import os;
+import schedule;
+import time;
+import psutil;
+from datetime import datetime;
+
 def ProcessDisplay(path):
 
     if not os.path.exists(path):
         os.mkdir(path);
-  
-    filename = os.path.join(path,"log%s.txt"%time.ctime());
+    
+    
+    filename = os.path.join(path,"Processlog%s.log"%(datetime.now().strftime("%d_%m_%Y__%H_%M_%S_")));
     
     fobj = open(filename,"w");
     
-    line = "-"*44;
+    line = "-"*55;
     
     fobj.write(line +"\n");
     fobj.write("Marvellous Process Logger at : %s\n"%time.ctime());
     fobj.write(line +"\n");
     
     for pobj in psutil.process_iter():
-        fobj.write(str(pobj));
+        fobj.write(str(pobj)+"\n");
 
     fobj.close();
 
@@ -23,7 +31,7 @@ def main():
 
     while True :
          schedule.run_pending();
-         time.sleep(1);
+         time.sleep(0.1);
 
 if __name__ == "__main__":
     main(); 
