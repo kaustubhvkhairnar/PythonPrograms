@@ -8,5 +8,3 @@ def chkprime(no):
         return False;
     else:
         return True;
-
-
