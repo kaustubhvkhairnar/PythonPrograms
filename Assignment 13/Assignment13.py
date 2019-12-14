@@ -8,8 +8,6 @@
 #Accept Mail id from user and send the attachment of the log file.
 #Mail body contains statistics about the operation of duplicate file removal.
 
-#DuplicateFileRemoval.py E:/Data/Demo 50 marvellousinfosystem@gmail.com
-
 import os;
 import time;
 import psutil;
