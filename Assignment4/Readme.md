@@ -10,3 +10,4 @@ Assignment4_4.py :- It is a program which contains filter(), map() and reduce() 
 
 Assignment4_5.py :- It is a program which contains filter(), map() and reduce() in it. Python application which contains one list of numbers. List contains the numbers which are accepted from user. Filter should filter out all prime numbers. Map function will multiply each number by 2. Reduce will return Maximum number from that numbers. (You can also use normal functions instead of lambda functions).
 
+Num.py :- Accepts a number and returns True if it is Prime and False if not.
