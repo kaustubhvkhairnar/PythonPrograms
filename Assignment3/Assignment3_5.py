@@ -3,7 +3,7 @@
 #number to ChkPrime() function which is part of our user defined module named as
 #MarvellousNum. Name of the function from main python file should be ListPrime().
 
-from MarvellousNum import *;
+from Num import *;
 
 
 def main():
