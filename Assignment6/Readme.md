@@ -1,6 +1,7 @@
 # Object orientation based programs
 
 Assignment6_1.py :-
+
 It is a program which contains one class named as Demo. Demo class contains two instance variables as no1 ,no2.  That class contains one class variable as Value. There are two instance methods of class as Fun and Gun which displays values of instance variables. Initialise instance variable in init method by accepting the values from user. After creating the class create the two objects of Demo class as
 Obj1 = Demo(11,21)
 Obj2 = Demo(51,101) 
@@ -11,6 +12,7 @@ Obj1.Gun()
 Obj2.Gun()
 
 Assignment6_2.py :-
+
 It is a program which contains one class named as Circle.Circle class contains three instance variables as Radius ,Area, Circumference.
 That class contains one class variable as PI which is initialise to 3.14.
 Inside init method initialise all instance variables to 0.0.
@@ -23,6 +25,7 @@ After designing the above class call all instance methods by creating multiple o
 
 
 Assignment6_3.py :-
+
 It is a program which contains one class named as Arithmetic.  
 Arithmetic class contains three instance variables as Value1 ,Value2.  
 Inside init method initialise all instance variables to 0.  
