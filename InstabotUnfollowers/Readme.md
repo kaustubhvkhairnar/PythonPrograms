@@ -19,5 +19,7 @@ abc         - Username
 
 xyz         - Password
 
+***********************************************************************************
+
 ##### NOTE:-
 ###### You must keep `chromedriver.exe` in same path as `Instabot.py`
