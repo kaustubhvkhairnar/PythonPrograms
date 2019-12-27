@@ -37,7 +37,6 @@ def MailSender(filename, time,mailID):
         msg['To'] = toaddr;
 
         body = """Hello %s,
-        \nWelcome to Marvellous Infosystems.
     Please find attached document which contains log file of running processes
         
     LogFile is created at : %s
