@@ -1,14 +1,15 @@
-#Automation Script
-##Unfollowers list
+# Automation Script
 
-###This is a script which allows you to see who is not following back on instagram...
+## Unfollowers list
+
+### This is a script which allows you to see who is not following back on instagram...
 The script shows you the process in realtime
 ------------------------------------------------------------------------------------
-#####SYNTAX:-
+##### SYNTAX:-
 python Application_Name.py Username Password
 
 ------------------------------------------------------------------------------------
-#####EXAMPLE:-
+##### EXAMPLE:-
 python InstaBot.py abc xyz
 
 InstaBot.py - ApplicationName
