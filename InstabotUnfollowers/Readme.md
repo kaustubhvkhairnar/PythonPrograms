@@ -12,8 +12,12 @@
 ##### EXAMPLE:-
 `python InstaBot.py abc xyz`
 ***********************************************************************************
+##### Where:-
 InstaBot.py - ApplicationName
 
 abc         - Username
 
 xyz         - Password
+
+##### NOTE:-
+###### You must keep `chromedriver.exe` in same path as `Instabot.py`
