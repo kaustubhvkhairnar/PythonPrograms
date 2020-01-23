@@ -21,5 +21,20 @@ xyz         - Password
 
 ***********************************************************************************
 
-##### NOTE:-
-###### You must keep `chromedriver.exe` in same path as `Instabot.py`
+##### FOR WINDOWS USERS:-
+###### You should first install selenium driver and then keep `chromedriver.exe` in same path as `Instabot.py`
+
+***********************************************************************************
+
+##### FOR LINUX USERS:-
+###### You should install chromedriver using command :-
+{
+   "cell_type": "code",
+   "execution_count": 1,
+   "metadata": {},
+   "outputs": [],
+   "source": [
+    "sudo apt-get install chromium-chromedriver"
+   ]
+  }
+
