@@ -45,7 +45,7 @@ class InstaBot:
 
     def _get_names(self):
         sleep(2)
-        sugs = self.driver.find_element_by_xpath('//h4[contains(text(), Suggestions)]')
+        sugs = self.driver.find_element_by_xpath(("/html/body/div[4]/div/div[2]/div"))
         self.driver.execute_script('arguments[0].scrollIntoView()', sugs)
         sleep(2)
         #/html/body/div[4]/div/div[2]
