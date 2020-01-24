@@ -28,17 +28,5 @@ xyz         - Password
 
 ##### FOR LINUX USERS:-
 ###### You should install chromedriver using command :-
-{
- "cells": [
-{
-   "cell_type": "code",
-   "execution_count": 1,
-   "metadata": {},
-   "outputs": [],
-   "source": [
-    "sudo apt-get install chromium-chromedriver"
-   ]
-   ]
-   }
-  }
 
+`sudo apt-get install chromium-chromedriver`
