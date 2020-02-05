@@ -15,23 +15,53 @@ def ProcessDisplay(path):
     
     fobj = open(filename,"w");
     
-    line = "-"*55;
+    line = "-"*70;
     
     fobj.write(line +"\n");
-    fobj.write("Marvellous Process Logger at : %s\n"%time.ctime());
+    fobj.write("Process Log at : %s\n"%time.ctime());
     fobj.write(line +"\n");
     
     for pobj in psutil.process_iter():
         fobj.write(str(pobj)+"\n");
 
-    fobj.close();
+    fobj.close()
+    
+
+def displayhelp():
+	line = "-"*55
+	print(line)
+	print()
+	print("-----------------------USAGE---------------------------")
+	print()
+	print("python ApplicationName.py FolderName")
+	print()
+	print("-----------------------EXAMPLE-------------------------")
+	print()
+	print("python processlogger.py logs")
+	print()
+	print(line)
 
 def main():
-    schedule.every(1).minute.do(ProcessDisplay,path = sys.argv[1]);
-
-    while True :
-         schedule.run_pending();
-         time.sleep(0.1);
-
+	line = "-"*55
+	print(line)
+	print()
+	print("Process Logger Automation Script")
+	print()
+	print(line)
+	print()
+	try:
+		schedule.every(1).minute.do(ProcessDisplay,path = sys.argv[1]);
+		
+		#For Never Ending Loop : use while True
+		while True: 
+			schedule.run_pending();
+			time.sleep(1)
+			
+	except Exception as E:
+		print("ERROR : ",E)
+		displayhelp()
+		print("Thank you for using our script")
+		print(line)
+        print()
 if __name__ == "__main__":
     main(); 
