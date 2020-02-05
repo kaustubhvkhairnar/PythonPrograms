@@ -14,16 +14,23 @@ def read(file):
         nobj.write(fobj.read());
         nobj.close();
         fobj.close();
+        print()
+        print("Your data is successfully copied from '" + file + "' to 'Demo.txt'")
     else:
         print("No such File in directory");
-
+        print()
+        print("------------------USAGE------------------")
+        print("python Application.py Filename.extension")
+        print("------------------------------------------")	
+        
+    
 
 def main():
-    try:
-        read(argv[1]);
-    except Exception as E:
-        print("Error",E);
-
+    read(argv[1]);    
+	
+    print()
+    print("Thank you for using our script")
+    print()
 
 if __name__ == "__main__":
-    main();
+    main()
