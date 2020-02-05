@@ -14,22 +14,22 @@ from datetime import datetime;
 
 def CPU_INFO_OS():
     print("--------CPU_INFO_OS--------");
-    if platform.system == 'Windows':
+    if platform.system() == 'Windows':
         return platform.processor();
-    elif platform.system == 'Darwin':
+    elif platform.system() == 'Darwin':
         command = '/usr/sbin/sysctl -n machdep.cpu.brand_string';
         return popen(command).read().strip();
-    elif platform.system == 'Linux':
-        command = 'cat/proc/cpuinfo';
+    elif platform.system() == 'Linux':
+        command = 'cat /proc/cpuinfo';
         return popen(command).read().strip();
     return 'Platform not identified.';
 
 def get_size(bytes,suffix = "B"):
-    factor = 1024;
-    for unit in ["","K","M","G","T","P"]:
-        if bytes< factor :
-            return f"{bytes:.2f}{unit}{suffix}";
-        bytes /= factor;
+	factor = 1024;
+	for unit in ["","K","M","G","T","P"]:
+		if bytes< factor :
+			return (f"{bytes:.2f}{unit}{suffix}")
+		bytes /= factor;
 
 def Platform_Info():
     print("--------SystemInformation--------");
@@ -77,13 +77,18 @@ def RAM_Usage():
     print(f"Percentage : {get_size(swap.percent)}%")
 
 def Disk_Info():
-    print("--------Disk Information--------");
-    print("Partitions And Usage");
+    print("---------------------------Disk Information-------------------------------------")
+    print()
+    print("--------------------------Partitions And Usage---------------------------------")
+    print()
     partitions = psutil.disk_partitions();
     for partition in partitions:
-        print(f"=== Device:{partition.device} ===");
-        print(f"   Mountpoint : {partition.mountpoint}");
-        print(f"   FileSystem Type : {partition.fstype}");
+        print(f"=========================== Device:{partition.device} ===========================");
+        print(f"			Mountpoint : {partition.mountpoint}");
+        print(f"   	   		FileSystem Type : {partition.fstype}")
+        print()
+        print("----------------------------------------------------------------------")
+        print()
         try:
             partition_usage = psutil.disk_usage(partition.mountpoint);
         except PermissionError:
