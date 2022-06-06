@@ -3,7 +3,7 @@
 
 def main():
     value=input("Enter number : ")
-    fact=factorial(int(value));
+    fact=factorial(int(value))
     print(fact)
 
 def factorial(no):
@@ -13,4 +13,4 @@ def factorial(no):
         return no * factorial(no-1)
 
 if __name__ == "__main__":
-    main();
+    main()
