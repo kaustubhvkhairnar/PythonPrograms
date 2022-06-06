@@ -1,4 +1,4 @@
-# Basic Automation Scripts
+# Automation Scripts
 
 Assignment1.py :- Accepts directory name & displays checksum of all files.
 
