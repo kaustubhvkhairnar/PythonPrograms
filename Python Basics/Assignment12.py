@@ -1,4 +1,4 @@
-#9. Write a program which accept number from user and return number of digits in that number.
+#12. Write a program which accept number from user and return number of digits in that number.
 
 def fun(num):
     sum=0
