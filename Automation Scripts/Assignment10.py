@@ -1,4 +1,4 @@
-#2.Design automation script which accept process name and display information of that process if it is running.
+#10.Design automation script which accept process name and display information of that process if it is running.
 
 import psutil;
 import sys;
