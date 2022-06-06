@@ -1,4 +1,4 @@
-# Applications based on Threading in Python
+# Applications based on Multithreading in Python
 
 Assignment8_1.py :- Python application which creates two thread named as even and odd. Even thread will display first 10 even numbers and odd thread will display first 10 odd numbers.
 
