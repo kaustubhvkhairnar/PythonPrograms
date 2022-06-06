@@ -1,4 +1,4 @@
-# 2. Design automation script which accept directory name and two file extensions from user.
+# 6. Design automation script which accept directory name and two file extensions from user.
 # Rename all files with first file extension with the second file extention.
 
 
