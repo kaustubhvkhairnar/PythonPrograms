@@ -1,4 +1,4 @@
-# 1.Design automation script which accept directory name and file extension from user. Display all
+# 5.Design automation script which accept directory name and file extension from user. Display all
 # files with that extension.
 
 import os;
