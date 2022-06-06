@@ -37,8 +37,6 @@ Multiplication() method will perform multiplication of Value1 ,Value2 and return
 Division() method will perform division of Value1 ,Value2 and return result. 
 After designing the above class call all instance methods by creating multiple objects.
 
-# Object Orientation Using Python
-
 Assignment4.py :-
 
 It is a program which contains one class named as BookStore.
