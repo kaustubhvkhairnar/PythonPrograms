@@ -16,4 +16,12 @@ Assignment7.py :- Accepts two directory names & Copy all files from first direct
 
 Assignment8.py :- Accepts two directory names & one file extension & Copies all files with the specified extension from first directory into second directory.
 
+Assignment9.py :- Displays information of running processes.
+
+Assignment10.py :- Accepts process name and display information of that process if it is running.
+
+Assignment11.py :- Accepts directory name from user and create log file in that directory which contains information of running processes.
+
+Assignment12.py :- Accepts directory name and mail id from user and create logfile in that directory which contains information of running processes as its name, PID,Username. After creating log file send that log file to the specified mail.
+
 chksum.py :- It is a module which returns the checksum of the file given to it.
