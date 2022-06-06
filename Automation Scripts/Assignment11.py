@@ -1,4 +1,4 @@
-# 3. Design automation script which accept directory name from user and create log file in that
+# 11. Design automation script which accept directory name from user and create log file in that
 # directory which contains information of running processes as its name, PID, Username.
 
 import sys;
