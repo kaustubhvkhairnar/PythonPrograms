@@ -3,32 +3,31 @@
 #number to chkPrime() function which is part of our user defined module named as
 #Prime. Name of the function from main python file should be listPrime().
 
-from Prime import *;
-
+from Prime import *
 
 def main():
     num = int(input("Enter number of elements : "))
-    listprime(num);
+    listprime(num)
 
 
 def listprime(no):
-    print("Enter", no, "Element/s");
-    arr = [];
+    print("Enter", no, "Element/s")
+    arr = []
     for i in range(no):
-        print("Enter", i + 1, "element");
-        num = int(input());
-        arr.append(num);
+        print("Enter", i + 1, "element")
+        num = int(input())
+        arr.append(num)
 
-    sum = 0;
+    sum = 0
 
     for i in range(no):
         if (chkprime(arr[i]) == True):
-            sum = sum + arr[i];
-            print("Prime number is i :",i,"arr[]:",arr[i]);
+            sum = sum + arr[i]
+            print("Prime number is i :",i,"arr[]:",arr[i])
 
-    print("Given elements : ", arr);
-    print("Sum of prime numbers is : ", sum);
+    print("Given elements : ", arr)
+    print("Sum of prime numbers is : ", sum)
 
 
 if __name__ == "__main__":
-    main();
+    main()
