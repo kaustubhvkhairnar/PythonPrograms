@@ -1,4 +1,4 @@
-#Accept Directory name from user and delete all duplicate files from the specified directory by
+#13. Accept Directory name from user and delete all duplicate files from the specified directory by
 #considering the checksum of files.
 #Create one Directory named as Marvellous and inside that directory create log file which
 #maintains all names of duplicate files which are deleted.
