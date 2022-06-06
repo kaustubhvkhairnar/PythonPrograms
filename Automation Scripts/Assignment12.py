@@ -1,4 +1,4 @@
-#4. Design automation script which accept directory name and mail id from user and create log
+#12. Design automation script which accept directory name and mail id from user and create log
 #file in that directory which contains information of running processes as its name, PID,
 #Username. After creating log file send that log file to the specified mail.
 
@@ -44,12 +44,11 @@ def MailSender(filename, time,mailID):
     This is auto generated mail.
     
     Thanks & Regards,
-    Piyush Manohar Khairnar
-    Marvellous Infosystems.
+    Kaustubh Khairnar
         """ % (toaddr, time);
 
         Subject = """
-        Marvellous ProcessLog generated at : %s
+        ProcessLog generated at : %s
         """ % (time);
 
         msg['Subject'] = Subject;
@@ -88,7 +87,7 @@ def ProcessLog(log_dir,mailID):
     fobj = open(log_path, "w");
 
     fobj.write(line + "\n");
-    fobj.write("Marvellous Process Logger at : %s\n" % time.ctime());
+    fobj.write("Process Logger at : %s\n" % time.ctime());
     fobj.write(line + "\n");
     fobj.write("\n");
 
@@ -130,8 +129,8 @@ def main():
         print("Invalid datatype of input");
 
     except Exception as E:
-        print(E);
+        print(E)
 
 
 if __name__ == "__main__":
-    main();
+    main()
