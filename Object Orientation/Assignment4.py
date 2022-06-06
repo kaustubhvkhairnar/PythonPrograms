@@ -1,4 +1,4 @@
-#1.Write a program which contains one class named as BookStore.
+#4.Write a program which contains one class named as BookStore.
 #BookStore class contains two instance variables as Name ,Author.
 #That class contains one class variable as NoOfBooks which is initialise to 0.
 #There is one instance methods of class as Display which displays name , Author and number of books.
