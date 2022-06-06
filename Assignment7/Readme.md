@@ -1,6 +1,6 @@
 # Object Orientation Using Python
 
-Assignment7_1.py :-
+Assignment4.py :-
 
 It is a program which contains one class named as BookStore.
 BookStore class contains two instance variables as Name ,Author.
@@ -14,7 +14,7 @@ Obj1.Display() # Linux System Programming by Robert Love. No of books : 1
 Obj2 = BookStore(“C Programming”, “Dennis Ritchie”)
 Obj2.Display() # C Programming by Dennis Ritchie. No of books : 2
 
-Assignment7_2.py :-
+Assignment5.py :-
 
 It is a program which contains one class named as BankAccount.
 BankAccount class contains two instance variables as Name & Amount.
@@ -31,7 +31,7 @@ which is Class variable as ROI.
 And Display() method will display value of all the instance variables as Name and Amount.
 After designing the above class call all instance methods by creating multiple objects.
 
-Assignment7_3.py :-
+Assignment6.py :-
 
 It is a program which contains one class named as Numbers.
 Arithmetic class contains one instance variables as Value.
