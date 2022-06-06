@@ -1,4 +1,4 @@
-# 3. Design automation script which accept two directory names. Copy all files from first directory
+# 7. Design automation script which accept two directory names. Copy all files from first directory
 # into second directory. Second directory should be created at run time.
 
 import os;
