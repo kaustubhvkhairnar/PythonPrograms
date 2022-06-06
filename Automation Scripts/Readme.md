@@ -24,4 +24,8 @@ Assignment11.py :- Accepts directory name from user and create log file in that 
 
 Assignment12.py :- Accepts directory name and mail id from user and create logfile in that directory which contains information of running processes as its name, PID,Username. After creating log file send that log file to the specified mail.
 
+Assignment13.py :- 
+Duplicate File Remover...
+Accept Directory name from user and delete all duplicate files from the specified directory by considering the checksum of files. Create one Directory named as Marvellous and inside that directory create log file which maintains all names of duplicate files which are deleted. Name of that log file contains the date and time at which that file gets created. Accepts duration in minutes from user and perform task of duplicate file removal after the specific time interval. Accept Mail id from user and send the attachment of the log file. Mail body contains statistics about the operation of duplicate file removal.
+
 chksum.py :- It is a module which returns the checksum of the file given to it.
