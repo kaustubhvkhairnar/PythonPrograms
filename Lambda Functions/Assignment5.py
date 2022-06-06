@@ -5,7 +5,7 @@
 # lambda functions).
 
 from functools import *;
-from Num import *;
+from Prime import *;
 
 
 def main():
