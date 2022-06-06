@@ -1,4 +1,4 @@
-#4. Design automation script which accept two directory names and one file extension. Copy all
+#8. Design automation script which accept two directory names and one file extension. Copy all
 #files with the specified extension from first directory into second directory. Second directory
 #should be created at run time.
 
